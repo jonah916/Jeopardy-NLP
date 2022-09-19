@@ -30,6 +30,12 @@ Right away, we can see that Ben Franklin was an American statesman who lived in 
 
 I used my script to repeat this process for more than a dozen of the categories I knew the least about, which produced over 1,000 word clouds for common topics. In addition, I wanted a convenient way to study the "flashcards" I was making, so I decided to make my word clouds compatible with the flashcard software [Anki](https://apps.ankiweb.net/). Uploading the clouds made it easy to study topics like "Islands" and "Poets & Poetry" and figure out which categories I was making progress on and which needed more work.
 
+<p align = "center">
+  <img src = https://github.com/jonah916/Jeopardy-NLP/blob/main/Anki%20Decks.png>
+<br>
+<em>Some of my Anki decks for common categories</em>
+</p>
+
 ## Reflections
 
 This project was good practice working with text data. It encouraged me to read up on NLP, different methods of cleaning text, and best practices for getting the most out of non-numeric data.
@@ -40,4 +46,6 @@ The only thing I would have done differently would have been to challenge myself
 
 ## Acknowledgements
 
-I owe credit for basically this entire project to Colin Davy. He was the sole source of inspiration for it, having been both creative enough to use this approach in his own *Jeopardy!* training and gracious enough to share his story online. If a recruiter ever notices me because of this project, I'll Venmo him for a nice dinner. 
+I owe credit for basically this entire project to Colin Davy. He was the sole source of inspiration for it, having been both creative enough to use this approach in his own *Jeopardy!* training and gracious enough to share his story online. If a recruiter ever notices me because of this project, I'll Venmo him for a nice dinner.
+
+Additional thanks to Reddit user u/jwolle1 for scraping the 350,000-question dataset and Kaggle user [Paul](https://www.kaggle.com/prondeau) for makingthe data available for download.
