@@ -2,7 +2,7 @@
 
 ## Background
 
-One of the passtimes I got into over the pandemic was watching *Jeopardy!*. It started with old episodes on Netflix, but once taping of new episodes resumed, I became a regular viewer in time to catch the recent legends like Matt Amodio and Amy Schneider.
+One of the pastimes I picked up over the pandemic was watching *Jeopardy!*. It started with old episodes on Netflix, but once taping of new episodes resumed, I became a regular viewer in time to catch the recent legends like Matt Amodio and Amy Schneider.
 
 As all *Jeopary!* enthusiasts are prone to do, I thought to myself, "I bet I could do that if I put my mind to it." I had enough sense to know I'd get crushed on regular *Jeopardy!*, but I decided to take the test for the college tournament. I ended up scoring well enough to qualify for a follow-up test, which I in turn did well enough on to be invited to a "live" (held over Zoom) audition for the college tournament. Making it to this stage meant that I'd be in the pool of potential contestants for the next 12-18 months. All there was left to do was wait for "The Call," which may or may not ever come.
 
@@ -22,8 +22,22 @@ Once the text of each question was clean, the script counted up how often a word
 
 Remember that the goal of this project was to learn a lot of new information about unfamiliar trivia topics as efficiently as possible. Getting lists of the words associated with each common topic technically accomplished this goal, but the lists weren't very easy on the eyes and probably were'nt themost conducive to absorbing information. Instead, like Colin Davy, I turned each of these lists into a word cloud. Each cloud displays the most common words and makes the most common words the biggest and the least common words the smallest. In addition, the words are colored for better visibility. This is the word cloud for Benjamin Franklin:
 
+<p align = "center">
+<img src = https://github.com/jonah916/Jeopardy-NLP/blob/main/wordcloud_benjamin%20franklin.png>
+</p>
+
 Right away, we can see that Ben Franklin was an American statesman who lived in Philadelphia. A quick google for "ben franklin printer" tells us that he was a successful printer and publisher, founding the nation's first newspaper chain, the *Pennsylvania Gazette*. With just a few seconds of looking at the word cloud, we learned what *Jeopardy!* considers to be the most important things associated with Benjamin Franklin.
 
 I used my script to repeat this process for more than a dozen of the categories I knew the least about, which produced over 1,000 word clouds for common topics. In addition, I wanted a convenient way to study the "flashcards" I was making, so I decided to make my word clouds compatible with the flashcard software [Anki](https://apps.ankiweb.net/). Uploading the clouds made it easy to study topics like "Islands" and "Poets & Poetry" and figure out which categories I was making progress on and which needed more work.
 
-## 
+## Reflections
+
+This project was good practice working with text data. It encouraged me to read up on NLP, different methods of cleaning text, and best practices for getting the most out of non-numeric data.
+
+It also gave me a chance to practice writing flexible code that could adapt to different needs. My final script was basically just a single function that takes two major inputs: the name of a category to look at (or, technically, a group of category names as defined by a regex string) and a list of uninformative words to ignore; for example, the word "poet" in the category "Poets & Poetry."
+
+The only thing I would have done differently would have been to challenge myself to scrape the data directly from J! Archive using R's Rvest package. I made a few initial attempts to scrape the data, but ultimately decided it would be easier to just use a pre-made dataset someone had posted on Kaggle.
+
+## Acknowledgements
+
+I owe credit for basically this entire project to Colin Davy. He was the sole source of inspiration for it, having been both creative enough to use this approach in his own *Jeopardy!* training and gracious enough to share his story online. If a recruiter ever notices me because of this project, I'll Venmo him for a nice dinner. 
